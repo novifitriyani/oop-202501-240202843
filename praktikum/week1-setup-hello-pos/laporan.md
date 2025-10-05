@@ -12,8 +12,7 @@ Topik: Pemrogramman dalam 3 Paradigma
 Mahasiswa memahami dan menerapkan konsep pemrograman dalam tiga paradigma:
 1. Paradigma Prosedural
 2. Paradigma Berorientasi Objek (OOP)
-3. Paradigma Fungsional
-  dengan membuat program sederhana "Hello POS World"
+3. Paradigma Fungsional  dengan membuat program sederhana "Hello POS World"
 ---
 
 ## Dasar Teori
