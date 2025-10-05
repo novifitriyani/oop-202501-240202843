@@ -15,7 +15,7 @@ Mahasiswa memahami dan menerapkan konsep pemrograman dalam tiga paradigma:
 3. Paradigma Fungsional
 ```
 dengan membuat program sederhana "Hello POS World"
-```
+---
 ---
 
 ## Dasar Teori
