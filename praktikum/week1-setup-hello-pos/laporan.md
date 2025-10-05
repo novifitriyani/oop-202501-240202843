@@ -132,14 +132,13 @@ public class HelloFunctional {
 ---
 
 ## Analisis
-(
 - Ketiga program menghasilkan output yang sama tetapi menggunakan pendekatan berbeda.  
 - Paradigma Prosedural lebih sederhan namun minim reusable code.  
 - Paradigma OOP lebih modular dan mempermudah pemeliharaan kode.
 - Paradigma Fungsional membuat kode lebih ringkas dan memanfaatkan fitur modern Java seperti stream API
 - Kendala: Menyesuaikan struktur folder dan package agar program berjalan tanpa error.
 - Solusi: Memastikan struktur folder sesuai ketentuan dan menambahkan package declaration.   
-)
+
 ---
 
 ## Kesimpulan
@@ -155,13 +154,12 @@ Penggunaan paradigma yang berbeda memberikan fleksibilitas dalam menulis kode. P
    **Jawaban: saat membutuhkan pengolahan data besar**
 
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
-   **Jawaban: 
-   prosedural: rendah
+   **Jawaban: prosedural: rendah
    OOP: tinggi
-   Fungsional: tinggi dan efisien **
+   Fungsional: tinggi dan efisien** 
 
-4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
+5. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
    **Jawaban: karena modular dan mudah dikembangkan**
 
-5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
+6. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
    **Jawaban: menggunakan fungsi murni dan stream untuk menulis kode ringkas**
