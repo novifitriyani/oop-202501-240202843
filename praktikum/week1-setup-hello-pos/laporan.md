@@ -127,7 +127,8 @@ public class HelloFunctional {
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+<img width="1465" height="1015" alt="image" src="https://github.com/user-attachments/assets/4f1562c2-4813-4514-a4ca-afd3b46afcf4" />
+
 )
 ---
 
