@@ -154,9 +154,7 @@ Penggunaan paradigma yang berbeda memberikan fleksibilitas dalam menulis kode. P
    **Jawaban: saat membutuhkan pengolahan data besar**
 
 3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
-   **Jawaban: prosedural: rendah
-   OOP: tinggi
-   Fungsional: tinggi dan efisien** 
+   **Jawaban: prosedural: rendah; OOP: tinggi; Fungsional: tinggi dan efisien** 
 
 5. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
    **Jawaban: karena modular dan mudah dikembangkan**
