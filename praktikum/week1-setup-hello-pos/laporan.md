@@ -126,13 +126,11 @@ public class HelloFunctional {
 ```
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
+Screenshot
 <img width="1465" height="1015" alt="image" src="https://github.com/user-attachments/assets/4f1562c2-4813-4514-a4ca-afd3b46afcf4" />
 <img width="1065" height="1016" alt="image" src="https://github.com/user-attachments/assets/132e6193-4a03-4f2a-bcc1-b28584738ecd" />
 <img width="1059" height="1016" alt="image" src="https://github.com/user-attachments/assets/70eaac1e-c9e2-4993-8672-448ee1a1c7b0" />
 
-
-)
 ---
 
 ## Analisis
