@@ -139,11 +139,12 @@ Dengan menggunakan class dan object, program menjadi lebih terstruktur, mudah di
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
+1. Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?  
    **Jawaban:** …  
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
+2. Apa fungsi getter dan setter dalam enkapsulasi?  
    **Jawaban:** …  
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Bagaimana cara class `Produk` mendukung pengembangan aplikasi POS yang lebih kompleks?  
+   **Jawaban:** …  
+
