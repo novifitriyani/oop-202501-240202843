@@ -115,23 +115,25 @@ public class MainProduk {
 
 
 ## Hasil Eksekusi
+Screenshot 
 <img width="1060" height="1019" alt="image" src="https://github.com/user-attachments/assets/b4b59a12-f27f-46d1-80f5-676a5057951e" />
+<img width="1475" height="1022" alt="image" src="https://github.com/user-attachments/assets/cf5dafe0-3d89-4127-a5ed-77c183ab8554" />
 ![Uploading image.png…]()
+
 
 
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+
+- Program membuat tiga objek Produk dan menampilkan informasi setiap produk.
+- CreditBy.print() digunakan untuk menampilkan identitas mahasisiwa di akhir program.
+- Perbedaan dengan minggu sebelumnya: menggunakan enkapsulasi dengan getter/setter dan memisahkan fungsi ke dalam package 
+- Kendala: awalnya error main method not found, diselesaikan dengan memastikan MainProduk.java memiliki public static void main (String[] args) dan package/folder sesuai.
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+Dengan menggunakan class dan object, program menjadi lebih terstruktur, mudah dikembangkan, dan memisahkan logika kode berdasarkan package.
 
 ---
 
