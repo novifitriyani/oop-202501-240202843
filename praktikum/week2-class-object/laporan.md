@@ -118,7 +118,8 @@ public class MainProduk {
 Screenshot 
 <img width="1475" height="1022" alt="image" src="https://github.com/user-attachments/assets/cf5dafe0-3d89-4127-a5ed-77c183ab8554" />
 <img width="1060" height="1019" alt="image" src="https://github.com/user-attachments/assets/b4b59a12-f27f-46d1-80f5-676a5057951e" />
-![Uploading image.png…]()
+<img width="1475" height="1022" alt="image" src="https://github.com/user-attachments/assets/161ffa82-91ab-4723-b91b-4271150c3dc6" />
+
 
 
 
