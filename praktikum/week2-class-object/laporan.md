@@ -24,8 +24,12 @@ Mahasiswa memahami konsep class dan object serta dapat membuat class Produk deng
 
 ## Langkah Praktikum
 1. Membuat folder project: oop-202501-240202843/praktikum/week2-class-object/.
-2. Membuat struktur folder 
-3. Commit message yang digunakan.)
+2. Membuat struktur folder src/main/java/com/upb/agripos, model, util, dan agripos.
+3. Membuat file Prodeuk.java di package model dengan atribut kode, nama, harga, dan stok, serta getter/setter dan method tambahStok/kurangiStok.
+4. Membuat file CreditBy.java di package util untuk menampilkan identitas mahasiswa.
+5. Membuat file MainProduk.java di package agripos, instansi tiga produk, menampilkan informasi produk, dan memanggil CreditBy.print().
+6. Compile dan run program di terminal VS code.
+7. Commit dengan pesan: week2-class-object.
 
 ---
 
