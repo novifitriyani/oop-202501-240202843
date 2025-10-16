@@ -75,6 +75,7 @@ public void kurangiStok(int jumlah) {
 }
 }
 ```
+---
 
 ```CreditBy.java
 package main.java.com.upb.agripos.util;
@@ -84,6 +85,8 @@ public class CreditBy {
         System.out.println("\ncredit by: " + nim + " - " + nama);
     }
 }
+```
+---
 
 ```MainProduk.java
 package main.java.com.upb.agripos;
@@ -106,6 +109,7 @@ public class MainProduk {
 }
 
 }
+```
 ---
 
 ## Hasil Eksekusi
