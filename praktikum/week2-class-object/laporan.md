@@ -34,7 +34,8 @@ Mahasiswa memahami konsep class dan object serta dapat membuat class Produk deng
 ---
 
 ## Kode Program
-```Produk.java
+Produk.java
+```java
 package main.java.com.upb.agripos.model;
 
 public class Produk {
@@ -75,9 +76,9 @@ public void kurangiStok(int jumlah) {
 }
 }
 ```
----
 
-```CreditBy.java
+CreditBy.java
+```java
 package main.java.com.upb.agripos.util;
 
 public class CreditBy {
@@ -88,7 +89,8 @@ public class CreditBy {
 ```
 ---
 
-```MainProduk.java
+MainProduk.java
+```java
 package main.java.com.upb.agripos;
 
 import main.java.com.upb.agripos.model.Produk;
@@ -110,7 +112,7 @@ public class MainProduk {
 
 }
 ```
----
+
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
