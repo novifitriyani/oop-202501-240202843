@@ -1,16 +1,15 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu 2
+Topik: Class dan Object (Produk Pertanian)
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Novi Fitriyani
+- NIM   : 240202843
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi, membuat objek, dan menampilkan informasi produk menggunakan java.
 
 ---
 
