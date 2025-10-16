@@ -13,19 +13,18 @@ Mahasiswa memahami konsep class dan object serta dapat membuat class Produk deng
 
 ---
 
-## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+## Dasar Teori 
+1. Class adalah blueprint atau cetak biru dari objek yang berisi atribut dan method.   
+2. Object adalah instansiasi dari class yang dapat menyimpan data dan memanggil method.  
+3. Enkapsulasi digunakan untuk menyembunyikan data (atribut private) dan mengatur akses melalui getter dan setter
+4. Method statis (static) dapat dipanggil tanpa membuat objek.
+5. Package digunakkan untuk mengelompokkan class sesuai fungsinya.
 
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
+1. Membuat folder project: oop-202501-240202843/praktikum/week2-class-object/.
+2. Membuat struktur folder 
 3. Commit message yang digunakan.)
 
 ---
