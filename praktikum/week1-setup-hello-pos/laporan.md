@@ -134,14 +134,12 @@ public class HelloFunctional {
 ---
 
 ## Analisis
-(
 - Ketiga program menghasilkan output yang sama tetapi menggunakan pendekatan berbeda.  
 - Paradigma Prosedural lebih sederhan namun minim reusable code.  
 - Paradigma OOP lebih modular dan mempermudah pemeliharaan kode.
 - Paradigma Fungsional membuat kode lebih ringkas dan memanfaatkan fitur modern Java seperti stream API
 - Kendala: Menyesuaikan struktur folder dan package agar program berjalan tanpa error.
 - Solusi: Memastikan struktur folder sesuai ketentuan dan menambahkan package declaration.   
-)
 ---
 
 ## Kesimpulan
