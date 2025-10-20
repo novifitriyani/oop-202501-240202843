@@ -166,4 +166,4 @@ Penggunaan paradigma yang berbeda memberikan fleksibilitas dalam menulis kode. P
    **Jawaban:** OOP cocok untuk aplikasi POS karena struktur modularnya memungkinkan pengelolaan komponen seperti produk, transaksi, dan pengguna secara terpisah. Ini memudahkan pengembangan, pemeliharaan, dan penambahan fitur baru.
 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
-   **Jawaban:** Paradigma fungsional menggunakan fungsi murni, lambda expression, dan stream API sehingga banyak logika dapat ditulis secara ringkas tanpa harus membuat kode panjang yang berulang, sehingga meminimalkan boilerplate code.
+   **Jawaban:**  Paradigma fungsional menggunakan fungsi murni, lambda expression, dan stream API sehingga banyak logika dapat ditulis secara ringkas tanpa harus membuat kode panjang yang berulang, sehingga meminimalkan boilerplate code.
