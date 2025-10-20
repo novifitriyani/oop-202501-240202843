@@ -1,4 +1,4 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
+# Laporan Praktikum Minggu 1 
 Topik: Pemrogramman dalam 3 Paradigma
 
 ## Identitas
