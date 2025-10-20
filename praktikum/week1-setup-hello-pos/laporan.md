@@ -150,20 +150,20 @@ Penggunaan paradigma yang berbeda memberikan fleksibilitas dalam menulis kode. P
 ---
 
 ## Quiz
-1. Apakah OOP selalu lebih baik dari prosedural?
+1. Apakah OOP selalu lebih baik dari prosedural?  
    **Jawaban:**  Tidak selalu. OOP lebih baik untuk aplikasi besar dan kompleks karena mendukung modularitas, enkapsulasi, dan reuse kode. Namun untuk program sederhana, prosedural lebih cepat dibuat dan mudah dipahami.
 
-2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
+2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?  
    **Jawaban:**  Functional programming lebih cocok digunakan ketika aplikasi membutuhkan pengolahan data yang besar, paralelisme, atau transformasi data yang kompleks, karena memanfaatkan fungsi murni dan stream processing yang efisien.
 
-3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
+3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?  
    **Jawaban:**  
    - Prosedural: Maintainability rendah untuk aplikasi besar, scalability terbatas.
    - OOP: Maintainability tinggi karena struktur modular, scalability baik dengan desain class yang baik.
    - Fungsional: Maintainability tinggi karena kode lebih ringkas dan minim efek samping, scalability sangat baik untuk aplikasi yang memproses data besar.
 
-4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
+4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?  
    **Jawaban:**  OOP cocok untuk aplikasi POS karena struktur modularnya memungkinkan pengelolaan komponen seperti produk, transaksi, dan pengguna secara terpisah. Ini memudahkan pengembangan, pemeliharaan, dan penambahan fitur baru.
 
-5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?
+5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (*boilerplate code*)?  
    **Jawaban:**  Paradigma fungsional menggunakan fungsi murni, lambda expression, dan stream API sehingga banyak logika dapat ditulis secara ringkas tanpa harus membuat kode panjang yang berulang, sehingga meminimalkan boilerplate code.
