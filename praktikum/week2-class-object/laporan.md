@@ -33,7 +33,7 @@ Mahasiswa mdapat emahami konsep class dan object serta dapat membuat class Produ
 ---
 
 ## Kode Program
-Ptoduk.java
+Produk.java
 ```java
 package main.java.com.upb.agripos.model;
 
@@ -114,9 +114,8 @@ public class MainProduk {
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+<img width="1093" height="1018" alt="image" src="https://github.com/user-attachments/assets/8d455515-fb7f-41dc-ac33-f088d5a40efa" />
+
 ---
 
 ## Analisis
