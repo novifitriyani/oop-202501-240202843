@@ -128,7 +128,7 @@ public class HelloFunctional {
 ```
 
 ## Hasil Eksekusi
-![Uploading image.png…]()
+
 
 
 ---
