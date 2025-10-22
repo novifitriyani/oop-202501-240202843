@@ -130,6 +130,7 @@ public class HelloFunctional {
 ## Hasil Eksekusi
 Screenshot
 <img width="1465" height="1015" alt="image" src="https://github.com/user-attachments/assets/5a4e5660-6010-458c-bce8-37654039277a" />
+<img width="1065" height="1016" alt="image" src="https://github.com/user-attachments/assets/bcd7251d-0a42-4796-9d33-2d65d41a5be8" />
 
 
 ---
