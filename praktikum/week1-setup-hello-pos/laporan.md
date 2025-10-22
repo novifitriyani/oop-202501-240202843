@@ -131,6 +131,7 @@ public class HelloFunctional {
 Screenshot
 <img width="1465" height="1015" alt="image" src="https://github.com/user-attachments/assets/5a4e5660-6010-458c-bce8-37654039277a" />
 <img width="1065" height="1016" alt="image" src="https://github.com/user-attachments/assets/bcd7251d-0a42-4796-9d33-2d65d41a5be8" />
+<img width="1059" height="1016" alt="image" src="https://github.com/user-attachments/assets/7099f0ac-cdfd-444b-b57d-6e49ac7c7b43" />
 
 
 ---
