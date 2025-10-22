@@ -128,7 +128,8 @@ public class HelloFunctional {
 ```
 
 ## Hasil Eksekusi
-
+Screenshot
+<img width="1465" height="1015" alt="image" src="https://github.com/user-attachments/assets/5a4e5660-6010-458c-bce8-37654039277a" />
 
 
 ---
