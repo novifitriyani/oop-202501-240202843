@@ -129,10 +129,10 @@ Dengan menerapkan inheritance, program menjadi lebih terstruktur, efisien, dan m
 ---
 
 ## Quiz
-1. Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?
+1. Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?  
    **Jawaban:** Inheritance memungkinkan penggunaan ulang kode (reusability) dan mengurangi duplikasi atribut/metode yang sama di beberapa class. 
 
-2. Bagaimana cara subclass memanggil konstruktor superclass?
+2. Bagaimana cara subclass memanggil konstruktor superclass?  
    **Jawaban:** Dengan menggunakan keyword `super()` di dalam konstruktor subclass.
 
 3. Berikan contoh kasus di POS pertanian selain Benih, Pupuk, dan Alat Pertanian yang bisa dijadikan subclass.  
