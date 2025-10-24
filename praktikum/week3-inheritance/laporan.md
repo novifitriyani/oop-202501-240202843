@@ -159,6 +159,7 @@ public class MainInheritance {
 **Screenshot**
 <img width="861" height="953" alt="image" src="https://github.com/user-attachments/assets/e89495c6-688d-47b1-9cc2-fe823216615b" />
 <img width="913" height="948" alt="image" src="https://github.com/user-attachments/assets/af09c397-ca78-4ab7-a9c3-1365d29a12d6" />
+<img width="907" height="946" alt="image" src="https://github.com/user-attachments/assets/7a59e6a0-86f6-4d7b-b7c5-410e498fbf6e" />
 
 
 ---
