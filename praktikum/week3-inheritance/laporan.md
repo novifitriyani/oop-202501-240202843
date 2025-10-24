@@ -157,6 +157,8 @@ public class MainInheritance {
 ```
 ## Hasil Eksekusi
 Screenshot
+<img width="861" height="953" alt="image" src="https://github.com/user-attachments/assets/e89495c6-688d-47b1-9cc2-fe823216615b" />
+
 ---
 
 ## Analisis
