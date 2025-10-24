@@ -12,7 +12,7 @@ Topik: Inheritance (Kategori Produk)
 - Mahasiswa mampu menjelaskan konsep inheritance (pewarisan class) dalam OOP.
 - Mahasiswa mampu membuat superclass dan subclass untuk produk pertanian.
 - Mahasiswa mampu mendemonstrasikan hierarki class melalui contoh kode.
-- Mahasiswa mampu menggunakan super untuk memanggil konstruktor dan method parent class.
+- Mahasiswa mampu menggunakan `super` untuk memanggil konstruktor dan method parent class.
 - Mahasiswa mampu membuat laporan praktikum yang menjelaskan perbedaan penggunaan inheritance dibanding class tunggal.
 ---
 
@@ -20,27 +20,24 @@ Topik: Inheritance (Kategori Produk)
 Inheritance adalah mekanisme dalam OOP yang memungkinkan suatu class mewarisi atribut dan method dari class lain.
 - Superclass: class induk yang mendefinisikan atribut umum.
 - Subclass: class turunan yang mewarisi atribut/method superclass, dan dapat menambahkan atribut/method baru.
-- super digunakan untuk memanggil konstruktor atau method superclass.
-Dalam konteks Agri-POS, kita dapat membuat class Produk sebagai superclass, kemudian Benih, Pupuk, dan AlatPertanian sebagai subclass. Hal ini membuat kode lebih reusable dan terstruktur.
-
-
+- `super` digunakan untuk memanggil konstruktor atau method superclass.
+Dalam konteks Agri-POS, kita dapat membuat class `Produk` sebagai superclass, kemudian `Benih`, `Pupuk`, dan `AlatPertanian` sebagai subclass. Hal ini membuat kode lebih reusable dan terstruktur.
 
 ---
 
 ## Langkah Praktikum
-1. Membuat Superclass Produk
-Membuat class Produk yang berisi atribut umum:
+1. **Membuat Superclass Produk**
+Membuat class Produk yang berisi atribut umum:  
 - kode, nama, harga, dan stok.
-2. Membuat Subclass
-Menurunkan class Produk menjadi tiga subclass:
-- Benih → atribut tambahan: varietas.
-- Pupuk → atribut tambahan: jenis.
-- AlatPertanian → atribut tambahan: material.
-3. Membuat Main Class
-Membuat class MainInheritance untuk menginstansiasi dan menampilkan data dari setiap subclass.
-4. Menambahkan CreditBy
-Class CreditBy digunakan untuk mencetak identitas mahasiswa pada akhir program.
-5. Commit dan Push ke GitHub
+2. **Membuat Subclass**  
+   - `Benih.java` → atribut tambahan: varietas.  
+   - `Pupuk.java` → atribut tambahan: jenis.  
+   - `AlatPertanian.java` → atribut tambahan: material. 
+3. **Membuat Main Class**
+Membuat class `MainInheritance` untuk menginstansiasi dan menampilkan data dari setiap subclass.
+4. **Menambahkan CreditBy**
+Class `CreditBy` digunakan untuk mencetak identitas mahasiswa pada akhir program.
+5. **Commit dan Push ke GitHub**
 ---
 
 ## Kode Program
@@ -116,20 +113,18 @@ public class MainInheritance {
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+Screenshot
 ---
 
 ## Analisis
-- Program menggunakan konsep inheritance di mana Benih, Pupuk, dan AlatPertanian mewarisi atribut dari Produk.
-- Keyword super digunakan untuk mengakses konstruktor dari superclass agar atribut dasar dapat diinisialisasi dengan benar.
+- Program menggunakan konsep inheritance di mana `Benih`, `Pupuk`, dan `AlatPertanian` mewarisi atribut dari `Produk`.
+- Keyword `super` digunakan untuk mengakses konstruktor dari superclass agar atribut dasar dapat diinisialisasi dengan benar.
 - Subclass menambahkan atribut baru yang spesifik sesuai jenis produk.
-- Pendekatan ini lebih efisien dibanding membuat tiga class terpisah tanpa hubungan, karena atribut umum (kode, nama, harga, stok) tidak perlu ditulis ulang.
-- Kendala: pada awalnya terjadi error karena struktur paket belum sesuai, diperbaiki dengan menyesuaikan nama folder dengan package.
+- Pendekatan ini lebih efisien dibanding membuat tiga class terpisah tanpa hubungan, karena atribut umum (`kode`, `nama`, `harga`, `stok`) tidak perlu ditulis ulang.
+- Kendala: pada awalnya terjadi error karena struktur paket belum sesuai, diperbaiki dengan menyesuaikan nama folder dengan `package`.
 
 ## Kesimpulan
-Dengan menerapkan inheritance, program menjadi lebih terstruktur, efisien, dan mudah dikembangkan. Superclass Produk dapat digunakan kembali oleh subclass lainnya, sementara subclass tetap dapat menambahkan atribut atau perilaku khusus sesuai kebutuhannya.
+Dengan menerapkan inheritance, program menjadi lebih terstruktur, efisien, dan mudah dikembangkan. Superclass `Produk` dapat digunakan kembali oleh subclass lainnya, sementara subclass tetap dapat menambahkan atribut atau perilaku khusus sesuai kebutuhannya.
 
 ---
 
@@ -138,7 +133,7 @@ Dengan menerapkan inheritance, program menjadi lebih terstruktur, efisien, dan m
    **Jawaban:** Inheritance memungkinkan penggunaan ulang kode (reusability) dan mengurangi duplikasi atribut/metode yang sama di beberapa class. 
 
 2. Bagaimana cara subclass memanggil konstruktor superclass?
-   **Jawaban:** Dengan menggunakan keyword super() di dalam konstruktor subclass.
+   **Jawaban:** Dengan menggunakan keyword `super()` di dalam konstruktor subclass.
 
 3. Berikan contoh kasus di POS pertanian selain Benih, Pupuk, dan Alat Pertanian yang bisa dijadikan subclass.  
-   **Jawaban:** Contohnya ObatTanaman dengan atribut tambahan seperti kandungan dan dosis.
+   **Jawaban:** Contohnya `ObatTanaman` dengan atribut tambahan seperti `kandungan` dan `dosis`.
