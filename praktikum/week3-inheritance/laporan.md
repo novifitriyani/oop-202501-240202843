@@ -18,8 +18,8 @@ Topik: Inheritance (Kategori Produk)
 
 ## Dasar Teori
 Inheritance adalah mekanisme dalam OOP yang memungkinkan suatu class mewarisi atribut dan method dari class lain.
-- Superclass: class induk yang mendefinisikan atribut umum.
-- Subclass: class turunan yang mewarisi atribut/method superclass, dan dapat menambahkan atribut/method baru.
+- **Superclass**: class induk yang mendefinisikan atribut umum.
+- **Subclass**: class turunan yang mewarisi atribut/method superclass, dan dapat menambahkan atribut/method baru.
 - `super` digunakan untuk memanggil konstruktor atau method superclass.
 Dalam konteks Agri-POS, kita dapat membuat class `Produk` sebagai superclass, kemudian `Benih`, `Pupuk`, dan `AlatPertanian` sebagai subclass. Hal ini membuat kode lebih reusable dan terstruktur.
 
@@ -111,7 +111,7 @@ public class MainInheritance {
 }
 
 ---
-
+```
 ## Hasil Eksekusi
 Screenshot
 ---
