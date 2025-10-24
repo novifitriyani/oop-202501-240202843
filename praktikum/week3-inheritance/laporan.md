@@ -26,22 +26,22 @@ Dalam konteks Agri-POS, kita dapat membuat class `Produk` sebagai superclass, ke
 ---
 
 ## Langkah Praktikum
-1. **Membuat Superclass Produk**
+1. **Membuat Superclass Produk**  
 Membuat class Produk yang berisi atribut umum:  
 - kode, nama, harga, dan stok.
 2. **Membuat Subclass**  
    - `Benih.java` → atribut tambahan: varietas.  
    - `Pupuk.java` → atribut tambahan: jenis.  
    - `AlatPertanian.java` → atribut tambahan: material. 
-3. **Membuat Main Class**
+3. **Membuat Main Class**  
 Membuat class `MainInheritance` untuk menginstansiasi dan menampilkan data dari setiap subclass.
-4. **Menambahkan CreditBy**
+4. **Menambahkan CreditBy**  
 Class `CreditBy` digunakan untuk mencetak identitas mahasiswa pada akhir program.
 5. **Commit dan Push ke GitHub**
 ---
 
 ## Kode Program
-Benih.java
+**Benih.java**
 ```java
 package com.upb.agripos.model;
 
@@ -57,7 +57,7 @@ public class Benih extends Produk {
     public void setVarietas(String varietas) { this.varietas = varietas; }
 }
 ```
-Pupuk.java
+**Pupuk.java**
 ```java
 package com.upb.agripos.model;
 
@@ -72,8 +72,8 @@ public class Pupuk extends Produk {
     public String getJenis() { return jenis; }
     public void setJenis(String jenis) { this.jenis = jenis; }
 }
-
-AlatPertanian.java
+```
+**AlatPertanian.java**
 ```java
 package com.upb.agripos.model;
 
@@ -89,7 +89,7 @@ public class AlatPertanian extends Produk {
     public void setMaterial(String material) { this.material = material; }
 }
 ```
-MainInheritance.java
+**MainInheritance.java**
 ```java 
 package com.upb.agripos;
 
