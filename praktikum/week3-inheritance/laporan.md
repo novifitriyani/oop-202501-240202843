@@ -88,7 +88,7 @@ public class AlatPertanian extends Produk {
     public String getMaterial() { return material; }
     public void setMaterial(String material) { this.material = material; }
 }
-
+```
 MainInheritance.java
 ```java 
 package com.upb.agripos;
