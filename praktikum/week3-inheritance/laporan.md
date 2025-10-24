@@ -162,6 +162,7 @@ public class MainInheritance {
 <img width="907" height="946" alt="image" src="https://github.com/user-attachments/assets/7a59e6a0-86f6-4d7b-b7c5-410e498fbf6e" />
 <img width="983" height="952" alt="image" src="https://github.com/user-attachments/assets/6259419f-d15f-44d3-8a5d-5e0e4f562b4f" />
 <img width="833" height="955" alt="image" src="https://github.com/user-attachments/assets/e88b17fa-eb47-4a53-bb17-b12ff86a3779" />
+<img width="1231" height="947" alt="image" src="https://github.com/user-attachments/assets/b2475621-4091-4a08-bd03-02f0e8a777fe" />
 
 
 ---
