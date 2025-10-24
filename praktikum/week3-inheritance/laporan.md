@@ -27,8 +27,8 @@ Dalam konteks Agri-POS, kita dapat membuat class `Produk` sebagai superclass, ke
 
 ## Langkah Praktikum
 1. **Membuat Superclass Produk**  
-Membuat class Produk yang berisi atribut umum:  
-- `kode`, `nama`, `harga`, dan `stok`.
+Membuat class Produk yang berisi atribut umum:
+`kode`, `nama`, `harga`, dan `stok`.
 3. **Membuat Subclass**  
    - `Benih.java` → atribut tambahan: varietas.  
    - `Pupuk.java` → atribut tambahan: jenis.  
