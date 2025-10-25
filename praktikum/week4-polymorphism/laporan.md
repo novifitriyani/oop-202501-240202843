@@ -205,6 +205,8 @@ public class MainPolymorphism {
 
 ## Hasil Eksekusi
 <img width="857" height="964" alt="image" src="https://github.com/user-attachments/assets/d34a639d-ef2b-4922-8d87-67d728080bd8" />
+<img width="903" height="958" alt="image" src="https://github.com/user-attachments/assets/473c177d-130a-43af-bf3b-cca4b252b10c" />
+
 
 ---
 
