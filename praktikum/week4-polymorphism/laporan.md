@@ -90,7 +90,7 @@ public class Produk {
         return "Produk: " + nama + " (Kode: " + kode + "), Harga: Rp" + harga + ", Stok: " + stok;
     }
 }
-
+```
 **Benih.java**
 ```java
 package main.java.com.upb.agripos.model;
@@ -108,7 +108,7 @@ public class Benih extends Produk {
         return "Benih: " + super.getInfo() + ", Varietas: " + varietas;
     }
 }
-``
+```
 
 **Pupuk.java**
 ```java
