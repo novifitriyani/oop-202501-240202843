@@ -246,3 +246,4 @@ public class MainAbstraction {
 - Liang, Y. D. *Introduction to Java Programming* (Bab 14).  
 - Horstmann, C. S. *Core Java Volume I – Fundamentals* (Bab 6).  
 - Oracle Docs: *Abstract Methods and Classes*, *Interfaces*.  
+
