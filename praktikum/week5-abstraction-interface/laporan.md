@@ -247,7 +247,14 @@ public class MainAbstraction {
 
 ## Hasil Eksekusi
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e1d9da8-0c31-418a-99c5-17e5e89da56c" />
- screenshots/Screenshot 2025-11-11 215751.png screenshots/Screenshot 2025-11-11 220145.png screenshots/Screenshot 2025-11-11 220204.png screenshots/Screenshot 2025-11-11 220226.png screenshots/Screenshot 2025-11-11 220244.png screenshots/Screenshot 2025-11-11 220338.png
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/970c9ce1-1374-4e5b-8fbe-781eda14b94f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9d1ef0f-d824-43de-8e63-fe58c2decf21" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/835d199b-11c5-440b-ab2c-e5b92a23c4fd" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2110ab0d-7636-4241-9723-99d10c51a55a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b140865b-b92c-4447-8dc5-8cfebf3e3482" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6940e3c3-c43c-44e2-a396-0ef26632e049" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e10623f4-ceea-42dc-b2a2-de26dc05f7ab" />
+
 ---
 
 ## Analisis
