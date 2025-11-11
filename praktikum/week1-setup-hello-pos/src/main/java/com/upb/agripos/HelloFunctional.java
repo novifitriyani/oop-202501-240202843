@@ -18,6 +18,3 @@ public class HelloFunctional {
         System.out.println("Total harga semua produk: " + total);
     }
 }
-
-
----
