@@ -246,7 +246,8 @@ public class MainAbstraction {
 ---
 
 ## Hasil Eksekusi
-screenshots/Screenshot 2025-11-11 215637.png screenshots/Screenshot 2025-11-11 215656.png screenshots/Screenshot 2025-11-11 215751.png screenshots/Screenshot 2025-11-11 220145.png screenshots/Screenshot 2025-11-11 220204.png screenshots/Screenshot 2025-11-11 220226.png screenshots/Screenshot 2025-11-11 220244.png screenshots/Screenshot 2025-11-11 220338.png
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e1d9da8-0c31-418a-99c5-17e5e89da56c" />
+ screenshots/Screenshot 2025-11-11 215751.png screenshots/Screenshot 2025-11-11 220145.png screenshots/Screenshot 2025-11-11 220204.png screenshots/Screenshot 2025-11-11 220226.png screenshots/Screenshot 2025-11-11 220244.png screenshots/Screenshot 2025-11-11 220338.png
 ---
 
 ## Analisis
