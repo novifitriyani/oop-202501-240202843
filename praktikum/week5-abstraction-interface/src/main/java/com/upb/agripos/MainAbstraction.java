@@ -17,4 +17,4 @@ public class MainAbstraction {
 
     CreditBy.print("240202843", "Novi Fitriyani");
     }
-}
+} 
