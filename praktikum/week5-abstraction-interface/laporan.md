@@ -1,5 +1,5 @@
 # Laporan Praktikum Minggu 5
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: Abstraction (Abstract Class & Interface)
 
 ## Identitas
 - Nama  : Novi Fitriyani
