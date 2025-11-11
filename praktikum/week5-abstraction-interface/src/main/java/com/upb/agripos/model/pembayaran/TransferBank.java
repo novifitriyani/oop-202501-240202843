@@ -16,7 +16,7 @@ public class TransferBank extends Pembayaran implements Receiptable, Validatable
 
     @Override
     public double biaya() { return BIAYA_TRANSFER; }
-
+ 
     @Override
     public boolean validasi() { return valid; }
 
