@@ -11,7 +11,7 @@ public class EWallet extends Pembayaran implements Validatable, Receiptable {
         super(invoiceNo, total);
         this.akun = akun;
         this.otp = otp;
-    }
+    } 
 
     @Override
     public double biaya() {
