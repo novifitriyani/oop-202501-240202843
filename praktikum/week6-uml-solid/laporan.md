@@ -242,10 +242,8 @@ CheckoutService --> PaymentService : uses
 
 ## Hasil Eksekusi
 **Screenshot**
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+<img width="997" height="634" alt="image" src="https://github.com/user-attachments/assets/92a15af4-4a05-4cb2-8b81-b15bc34799f5" />
+
 
 
 ---
