@@ -241,10 +241,16 @@ CheckoutService --> PaymentService : uses
 ```
 
 ## Hasil Eksekusi
-**Screenshot**
-<img width="834" height="492" alt="image" src="https://github.com/user-attachments/assets/45572f6d-a900-4a6d-81c1-fa4063cd80aa" />
-<img width="997" height="634" alt="image" src="https://github.com/user-attachments/assets/92a15af4-4a05-4cb2-8b81-b15bc34799f5" />
-<img width="948" height="683" alt="image" src="https://github.com/user-attachments/assets/d784ae3f-3e00-4170-90c4-2e4323d72823" />
+**Use Case Diagram**
+<img width="834" height="492" alt="image" src="https://github.com/user-attachments/assets/45572f6d-a900-4a6d-81c1-fa4063cd80aa" />  
+
+**Activity Diagram**
+<img width="997" height="634" alt="image" src="https://github.com/user-attachments/assets/92a15af4-4a05-4cb2-8b81-b15bc34799f5" />  
+
+**Sequence Diagram**
+<img width="948" height="683" alt="image" src="https://github.com/user-attachments/assets/d784ae3f-3e00-4170-90c4-2e4323d72823" />  
+
+**Class Diagram**
 <img width="997" height="466" alt="image" src="https://github.com/user-attachments/assets/73cb49f0-dd5e-4d26-a94a-8deee47123a7" />
 
 
