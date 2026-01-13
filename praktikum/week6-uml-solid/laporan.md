@@ -5,7 +5,7 @@ Topik: Desain Arsitektur Sistem dengan UML dan prinsip Solid
 - Nama  : Novi Fitriyani
 - NIM   : 240202843
 - Kelas : 3IKRA
-
+ 
 ---
 
 ## Tujuan
