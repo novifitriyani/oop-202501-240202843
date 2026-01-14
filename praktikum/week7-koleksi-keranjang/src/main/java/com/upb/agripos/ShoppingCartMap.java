@@ -28,6 +28,6 @@ public class ShoppingCartMap {
         for (Map.Entry<Product, Integer> e : items.entrySet()) {
             System.out.println("- " + e.getKey().getCode() + " " + e.getKey().getName() + " x" + e.getValue());
         }
-        System.out.println("Total: " + getTotal());
+        System.out.println("Total: " + getTotal()); 
     }
 }
