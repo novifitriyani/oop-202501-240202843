@@ -183,18 +183,18 @@ public class MainCart {
    - List menyimpan elemen secara terurut dan bisa memiliki duplikasi. Cocok untuk menyimpan data berurutan seperti daftar belanja.
    - Set menyimpan elemen unik tanpa duplikasi dan tidak menjamin urutan. Digunakan ketika duplikasi harus dihindari, misalnya daftar kode produk.- - Map menyimpan data dalam pasangan key–value. Key harus unik, sedangkan value bisa sama. Berguna untuk menyimpan data yang bisa dicari cepat berdasarkan key, misalnya produk dan jumlahnya di keranjang.
 
-2. Mengapa ArrayList cocok digunakan untuk keranjang belanja sederhana?
+2. Mengapa ArrayList cocok digunakan untuk keranjang belanja sederhana?  
    **Jawaban:**  
    - ArrayList mudah digunakan untuk menambahkan dan menghapus produk secara dinamis.
    - Mendukung iterasi (looping) untuk menampilkan semua item dengan cepat.
    - Struktur ini fleksibel, sehingga jumlah item bisa bertambah atau berkurang tanpa perlu menentukan ukuran awal seperti array biasa.
 
-3. Bagaimana struktur Set mencegah duplikasi data?
+3. Bagaimana struktur Set mencegah duplikasi data?  
    **Jawaban:**  
    - Set menggunakan mekanisme hashing dan metode equals() untuk mengecek apakah elemen sudah ada.
    - Jika elemen sudah ada, Set tidak menambahnya lagi. Dengan demikian, tidak ada elemen duplikat dalam Set.
 
-4. Kapan sebaiknya menggunakan Map dibandingkan List? Jelaskan dengan contoh.
+4. Kapan sebaiknya menggunakan Map dibandingkan List? Jelaskan dengan contoh.  
    **Jawaban:**  
    - Map digunakan ketika data memiliki pasangan unik key–value dan kita ingin akses cepat berdasarkan key.
    - Contoh: Keranjang belanja yang menyimpan jumlah tiap produk.  
