@@ -160,7 +160,8 @@ public class MainCart {
 
 ## Hasil Eksekusi
 **Screenshot**
-![alt text](image.png)
+<img width="1066" height="994" alt="image" src="https://github.com/user-attachments/assets/8eea597f-1771-4c21-9d68-92bc2b605708" />
+
 ---
 
 ## Analisis
