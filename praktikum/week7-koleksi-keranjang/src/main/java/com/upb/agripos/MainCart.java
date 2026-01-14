@@ -15,4 +15,4 @@ public class MainCart {
         cart.removeProduct(p1);
         cart.printCart();
     }
-}
+} 
