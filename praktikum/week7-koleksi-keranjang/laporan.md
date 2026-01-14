@@ -178,7 +178,7 @@ public class MainCart {
 ---
 
 ## Quiz
-(1. Jelaskan perbedaan mendasar antara List, Map, dan Set.  
+1. Jelaskan perbedaan mendasar antara List, Map, dan Set.  
    **Jawaban:**  
    - List menyimpan elemen secara terurut dan bisa memiliki duplikasi. Cocok untuk menyimpan data berurutan seperti daftar belanja.
    - Set menyimpan elemen unik tanpa duplikasi dan tidak menjamin urutan. Digunakan ketika duplikasi harus dihindari, misalnya daftar kode produk.- - Map menyimpan data dalam pasangan key–value. Key harus unik, sedangkan value bisa sama. Berguna untuk menyimpan data yang bisa dicari cepat berdasarkan key, misalnya produk dan jumlahnya di keranjang.
@@ -204,5 +204,3 @@ public class MainCart {
    cart.put(pupuk, 1);
    ```  
    Dengan Map, kita bisa langsung menambah, mengurangi, dan menghitung total tiap produk tanpa harus menelusuri seluruh list.
-
-   )
