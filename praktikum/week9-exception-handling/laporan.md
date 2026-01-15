@@ -168,7 +168,7 @@ public class MainExceptionDemo {
 
 ## Hasil Eksekusi
 **Screenshot**
-![alt text](image.png)
+<img width="1070" height="865" alt="image" src="https://github.com/user-attachments/assets/20ca219b-6b9f-4055-a7dc-64c8cc8d6f25" />
 ---
 
 ## Analisis
