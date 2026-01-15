@@ -1,73 +1,207 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu 7
+Topik: Collections dan Implementasi Keranjang Belanja
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Novi fitriyani
+- NIM   : 240202843
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+Mahasiswa mampu:  
+1. Menjelaskan konsep collection dalam Java (List, Map, Set).
+2. Menggunakan ArrayList untuk menyimpan dan mengelola objek.
+3. Mengimplementasikan Map atau Set sesuai kebutuhan pengelolaan data.
+4. Melakukan operasi dasar pada collection: tambah, hapus, dan hitung total.
+5. Menganalisis efisiensi penggunaan collection dalam konteks sistem Agri-POS.
 
 ---
 
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
-
+1. Collections Framework
+Java Collections Framework menyediakan struktur data untuk mengelola objek secara dinamis dan efisien.  
+Struktur utama:  
+- List (implementasi: ArrayList) — Terurut, dapat menyimpan elemen duplikat.
+- Map (implementasi: HashMap) — Menyimpan pasangan key–value, akses cepat berdasarkan key.
+- Set (implementasi: HashSet) — Tidak menerima duplikat dan tidak mempertahankan urutan.  
+2. Studi Kasus: Keranjang Belanja Agri-POS  
+- Keranjang belanja harus dapat:  
+- Menambahkan produk
+- Menghapus produk
+- Menampilkan isi keranjang
+- Menghitung total nilai transaksi
+- Menangani jumlah (quantity) menggunakan Map  
+Kasus ini mencerminkan penggunaan struktur data dalam aplikasi nyata seperti POS.
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
-
+1. Membuat class Product dengan atribut code, name, dan price.
+2. Membuat class ShoppingCart menggunakan ArrayList<Product> untuk menambahkan, menghapus, dan menampilkan produk.
+3. Membuat MainCart.java untuk menguji program.
+4. Menambahkan beberapa produk (Beras dan Pupuk) ke keranjang.
+5. Menjalankan metode addProduct(), removeProduct(), printCart(), dan getTotal().
+6. Melakukan screenshot hasil eksekusi program (screenshots/hasil.png).
+7. Commit & push
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
-
+**Product.java**
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+package main.java.com.upb.agripos;
+
+public class Product {
+    private final String code;
+    private final String name;
+    private final double price;
+
+    public Product(String code, String name, double price) {
+        this.code = code;
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getCode() { return code; }
+    public String getName() { return name; }
+    public double getPrice() { return price; }
+}
 ```
-)
+
+**ShoppingCart.java**
+```java
+package main.java.com.upb.agripos;
+
+import java.util.ArrayList;
+
+public class ShoppingCart {
+    private final ArrayList<Product> items = new ArrayList<>();
+
+    public void addProduct(Product p) { items.add(p); }
+    public void removeProduct(Product p) { items.remove(p); }
+
+    public double getTotal() {
+        double sum = 0;
+        for (Product p : items) {
+            sum += p.getPrice();
+        }
+        return sum;
+    }
+
+    public void printCart() {
+        System.out.println("Isi Keranjang:");
+        for (Product p : items) {
+            System.out.println("- " + p.getCode() + " " + p.getName() + " = " + p.getPrice());
+        }
+        System.out.println("Total: " + getTotal());
+    }
+}
+```
+
+**ShoppingCartMap.java**
+```java
+package main.java.com.upb.agripos;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ShoppingCartMap {
+    private final Map<Product, Integer> items = new HashMap<>();
+
+    public void addProduct(Product p) { items.put(p, items.getOrDefault(p, 0) + 1); }
+
+    public void removeProduct(Product p) {
+        if (!items.containsKey(p)) return;
+        int qty = items.get(p);
+        if (qty > 1) items.put(p, qty - 1);
+        else items.remove(p);
+    }
+
+    public double getTotal() {
+        double total = 0;
+        for (Map.Entry<Product, Integer> entry : items.entrySet()) {
+            total += entry.getKey().getPrice() * entry.getValue();
+        }
+        return total;
+    }
+
+    public void printCart() {
+        System.out.println("Isi Keranjang (Map):");
+        for (Map.Entry<Product, Integer> e : items.entrySet()) {
+            System.out.println("- " + e.getKey().getCode() + " " + e.getKey().getName() + " x" + e.getValue());
+        }
+        System.out.println("Total: " + getTotal());
+    }
+}
+```
+
+**MainCart.java**
+```java
+package main.java.com.upb.agripos;
+
+public class MainCart {
+    public static void main(String[] args) {
+        System.out.println("Hello, I am Novi Fitriyani-240202843 (Week7)");
+
+        Product p1 = new Product("P01", "Beras", 50000);
+        Product p2 = new Product("P02", "Pupuk", 30000);
+
+        ShoppingCart cart = new ShoppingCart();
+        cart.addProduct(p1);
+        cart.addProduct(p2);
+        cart.printCart();
+
+        cart.removeProduct(p1);
+        cart.printCart();
+    }
+}
+```
+
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
-)
+**Screenshot**
+![alt text](image.png)
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+- Kode berjalan dengan baik, produk berhasil ditambahkan, dihapus, dan total transaksi dihitung benar.
+- Perbedaan pendekatan minggu ini dibanding minggu sebelumnya: penggunaan Java Collections (ArrayList) untuk manajemen objek, bukan array statis.
+- Kendala: memastikan item dihapus dengan benar dari ArrayList, berhasil diatasi dengan items.remove(p).
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+- ArrayList efektif digunakan untuk implementasi keranjang belanja sederhana.
+- Map dapat digunakan sebagai alternatif jika ingin menyimpan quantity tiap produk.
+- Menggunakan Collections membuat kode lebih fleksibel, dinamis, dan mudah dikembangkan.an mudah dikembangkan.*)
 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+(1. Jelaskan perbedaan mendasar antara List, Map, dan Set.  
+   **Jawaban:**  
+   - List menyimpan elemen secara terurut dan bisa memiliki duplikasi. Cocok untuk menyimpan data berurutan seperti daftar belanja.
+   - Set menyimpan elemen unik tanpa duplikasi dan tidak menjamin urutan. Digunakan ketika duplikasi harus dihindari, misalnya daftar kode produk.- - Map menyimpan data dalam pasangan key–value. Key harus unik, sedangkan value bisa sama. Berguna untuk menyimpan data yang bisa dicari cepat berdasarkan key, misalnya produk dan jumlahnya di keranjang.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. Mengapa ArrayList cocok digunakan untuk keranjang belanja sederhana?
+   **Jawaban:**  
+   - ArrayList mudah digunakan untuk menambahkan dan menghapus produk secara dinamis.
+   - Mendukung iterasi (looping) untuk menampilkan semua item dengan cepat.
+   - Struktur ini fleksibel, sehingga jumlah item bisa bertambah atau berkurang tanpa perlu menentukan ukuran awal seperti array biasa.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Bagaimana struktur Set mencegah duplikasi data?
+   **Jawaban:**  
+   - Set menggunakan mekanisme hashing dan metode equals() untuk mengecek apakah elemen sudah ada.
+   - Jika elemen sudah ada, Set tidak menambahnya lagi. Dengan demikian, tidak ada elemen duplikat dalam Set.
+
+4. Kapan sebaiknya menggunakan Map dibandingkan List? Jelaskan dengan contoh.
+   **Jawaban:**  
+   - Map digunakan ketika data memiliki pasangan unik key–value dan kita ingin akses cepat berdasarkan key.
+   - Contoh: Keranjang belanja yang menyimpan jumlah tiap produk.  
+   ```java
+   Map<Product, Integer> cart = new HashMap<>();
+   cart.put(beras, 2);  // key = produk, value = jumlah
+   cart.put(pupuk, 1);
+   ```  
+   Dengan Map, kita bisa langsung menambah, mengurangi, dan menghitung total tiap produk tanpa harus menelusuri seluruh list.
+
+   )
