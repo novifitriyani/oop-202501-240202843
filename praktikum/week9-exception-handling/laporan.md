@@ -1,8 +1,8 @@
-# Laporan Praktikum Minggu 7
-Topik: Collections dan Implementasi Keranjang Belanja
+# Laporan Praktikum Minggu 9
+Topik: Exception Handling, Custom Exception, dan Penerapan Design Pattern
 
 ## Identitas
-- Nama  : Novi fitriyani
+- Nama  : Novi Fitriyani
 - NIM   : 240202843
 - Kelas : 3IKRA
 
@@ -10,148 +10,156 @@ Topik: Collections dan Implementasi Keranjang Belanja
 
 ## Tujuan
 Mahasiswa mampu:  
-1. Menjelaskan konsep collection dalam Java (List, Map, Set).
-2. Menggunakan ArrayList untuk menyimpan dan mengelola objek.
-3. Mengimplementasikan Map atau Set sesuai kebutuhan pengelolaan data.
-4. Melakukan operasi dasar pada collection: tambah, hapus, dan hitung total.
-5. Menganalisis efisiensi penggunaan collection dalam konteks sistem Agri-POS.
+1. Menjelaskan perbedaan antara error dan exception.
+2. Mengimplementasikan try–catch–finally dengan tepat.
+3. Membuat custom exception sesuai kebutuhan program.
+4. Mengintegrasikan exception handling ke dalam aplikasi sederhana (kasus keranjang belanja).
+5. (Opsional) Menerapkan design pattern sederhana (Singleton/MVC) dan unit testing dasar.
 
 ---
 
 ## Dasar Teori
-1. Collections Framework
-Java Collections Framework menyediakan struktur data untuk mengelola objek secara dinamis dan efisien.  
-Struktur utama:  
-- List (implementasi: ArrayList) — Terurut, dapat menyimpan elemen duplikat.
-- Map (implementasi: HashMap) — Menyimpan pasangan key–value, akses cepat berdasarkan key.
-- Set (implementasi: HashSet) — Tidak menerima duplikat dan tidak mempertahankan urutan.  
-2. Studi Kasus: Keranjang Belanja Agri-POS  
-- Keranjang belanja harus dapat:  
-- Menambahkan produk
-- Menghapus produk
-- Menampilkan isi keranjang
-- Menghitung total nilai transaksi
-- Menangani jumlah (quantity) menggunakan Map  
-Kasus ini mencerminkan penggunaan struktur data dalam aplikasi nyata seperti POS.
+1. Error merupakan kesalahan fatal yang biasanya tidak dapat ditangani oleh program, seperti OutOfMemoryError.
+2. Exception adalah kondisi kesalahan yang masih dapat ditangani sehingga program tidak langsung berhenti.
+3. Exception handling di Java menggunakan struktur try–catch–finally.
+4. Custom exception dibuat untuk menangani kesalahan yang spesifik sesuai kebutuhan bisnis aplikasi.
 ---
 
 ## Langkah Praktikum
-1. Membuat class Product dengan atribut code, name, dan price.
-2. Membuat class ShoppingCart menggunakan ArrayList<Product> untuk menambahkan, menghapus, dan menampilkan produk.
-3. Membuat MainCart.java untuk menguji program.
-4. Menambahkan beberapa produk (Beras dan Pupuk) ke keranjang.
-5. Menjalankan metode addProduct(), removeProduct(), printCart(), dan getTotal().
-6. Melakukan screenshot hasil eksekusi program (screenshots/hasil.png).
-7. Commit & push
+1. Menyiapkan struktur direktori dan package com.upb.agripos.
+2. Membuat minimal dua custom exception, yaitu InvalidQuantityException, ProductNotFoundException, dan InsufficientStockException.
+3.Membuat class Product sebagai model produk yang memiliki atribut stok.
+4. Mengimplementasikan class ShoppingCart dengan validasi dan exception handling pada metode tambah produk, hapus produk, dan checkout.
+5. Membuat class MainExceptionDemo sebagai controller untuk menguji seluruh exception.
+6. Menjalankan program dan melakukan screenshot hasil eksekusi.
+7. Melakukan commit dan push ke repository GitHub.
+
 ---
 
 ## Kode Program
 **Product.java**
 ```java
-package main.java.com.upb.agripos;
+package com.upb.agripos;
 
 public class Product {
     private final String code;
     private final String name;
     private final double price;
+    private int stock;
 
-    public Product(String code, String name, double price) {
+    public Product(String code, String name, double price, int stock) {
         this.code = code;
         this.name = name;
         this.price = price;
+        this.stock = stock;
     }
 
     public String getCode() { return code; }
     public String getName() { return name; }
     public double getPrice() { return price; }
+    public int getStock() { return stock; }
+    public void reduceStock(int qty) { this.stock -= qty; }
+}
+```
+
+**InvalidQuantityException.java**
+```java
+package com.upb.agripos;
+
+public class InvalidQuantityException extends Exception {
+    public InvalidQuantityException(String msg) { super(msg); }
+}
+```
+
+**ProductNotFoundException.java**
+```java
+package com.upb.agripos;
+
+public class ProductNotFoundException extends Exception {
+    public ProductNotFoundException(String msg) { super(msg); }
+}
+```
+
+**InsufficientStockException.java**
+```java
+package com.upb.agripos;
+
+public class InsufficientStockException extends Exception {
+    public InsufficientStockException(String msg) { super(msg); }
 }
 ```
 
 **ShoppingCart.java**
 ```java
-package main.java.com.upb.agripos;
-
-import java.util.ArrayList;
-
-public class ShoppingCart {
-    private final ArrayList<Product> items = new ArrayList<>();
-
-    public void addProduct(Product p) { items.add(p); }
-    public void removeProduct(Product p) { items.remove(p); }
-
-    public double getTotal() {
-        double sum = 0;
-        for (Product p : items) {
-            sum += p.getPrice();
-        }
-        return sum;
-    }
-
-    public void printCart() {
-        System.out.println("Isi Keranjang:");
-        for (Product p : items) {
-            System.out.println("- " + p.getCode() + " " + p.getName() + " = " + p.getPrice());
-        }
-        System.out.println("Total: " + getTotal());
-    }
-}
-```
-
-**ShoppingCartMap.java**
-```java
-package main.java.com.upb.agripos;
+package com.upb.agripos;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ShoppingCartMap {
+public class ShoppingCart {
     private final Map<Product, Integer> items = new HashMap<>();
 
-    public void addProduct(Product p) { items.put(p, items.getOrDefault(p, 0) + 1); }
-
-    public void removeProduct(Product p) {
-        if (!items.containsKey(p)) return;
-        int qty = items.get(p);
-        if (qty > 1) items.put(p, qty - 1);
-        else items.remove(p);
+    public void addProduct(Product p, int qty) throws InvalidQuantityException {
+        if (qty <= 0) {
+            throw new InvalidQuantityException("Quantity harus lebih dari 0.");
+        }
+        items.put(p, items.getOrDefault(p, 0) + qty);
     }
 
-    public double getTotal() {
-        double total = 0;
+    public void removeProduct(Product p) throws ProductNotFoundException {
+        if (!items.containsKey(p)) {
+            throw new ProductNotFoundException("Produk tidak ada dalam keranjang.");
+        }
+        items.remove(p);
+    }
+
+    public void checkout() throws InsufficientStockException {
         for (Map.Entry<Product, Integer> entry : items.entrySet()) {
-            total += entry.getKey().getPrice() * entry.getValue();
+            Product product = entry.getKey();
+            int qty = entry.getValue();
+            if (product.getStock() < qty) {
+                throw new InsufficientStockException(
+                    "Stok tidak cukup untuk: " + product.getName()
+                );
+            }
         }
-        return total;
-    }
-
-    public void printCart() {
-        System.out.println("Isi Keranjang (Map):");
-        for (Map.Entry<Product, Integer> e : items.entrySet()) {
-            System.out.println("- " + e.getKey().getCode() + " " + e.getKey().getName() + " x" + e.getValue());
+        // contoh pengurangan stok bila semua cukup
+        for (Map.Entry<Product, Integer> entry : items.entrySet()) {
+            entry.getKey().reduceStock(entry.getValue());
         }
-        System.out.println("Total: " + getTotal());
     }
 }
 ```
 
-**MainCart.java**
+**MainExceptionDemo.java**
 ```java
-package main.java.com.upb.agripos;
+package com.upb.agripos;
 
-public class MainCart {
+public class MainExceptionDemo {
     public static void main(String[] args) {
-        System.out.println("Hello, I am Novi Fitriyani-240202843 (Week7)");
-
-        Product p1 = new Product("P01", "Beras", 50000);
-        Product p2 = new Product("P02", "Pupuk", 30000);
+        System.out.println("Hello, I am Novi Fitriyani-240202843 (Week9)");
 
         ShoppingCart cart = new ShoppingCart();
-        cart.addProduct(p1);
-        cart.addProduct(p2);
-        cart.printCart();
+        Product p1 = new Product("P01", "Pupuk Organik", 25000, 3);
 
-        cart.removeProduct(p1);
-        cart.printCart();
+        try {
+            cart.addProduct(p1, -1);
+        } catch (InvalidQuantityException e) {
+            System.out.println("Kesalahan: " + e.getMessage());
+        }
+
+        try {
+            cart.removeProduct(p1);
+        } catch (ProductNotFoundException e) {
+            System.out.println("Kesalahan: " + e.getMessage());
+        }
+
+        try {
+            cart.addProduct(p1, 5);
+            cart.checkout();
+        } catch (Exception e) {
+            System.out.println("Kesalahan: " + e.getMessage());
+        }
     }
 }
 ```
@@ -164,44 +172,25 @@ public class MainCart {
 ---
 
 ## Analisis
-- Kode berjalan dengan baik, produk berhasil ditambahkan, dihapus, dan total transaksi dihitung benar.
-- Perbedaan pendekatan minggu ini dibanding minggu sebelumnya: penggunaan Java Collections (ArrayList) untuk manajemen objek, bukan array statis.
-- Kendala: memastikan item dihapus dengan benar dari ArrayList, berhasil diatasi dengan items.remove(p).
+- Program berjalan dengan memanfaatkan blok try–catch untuk menangani setiap kesalahan yang terjadi.
+- Dibandingkan praktikum minggu sebelumnya, praktikum ini lebih menekankan pada penanganan kesalahan agar program tetap berjalan dengan aman.
+- Kendala yang ditemui adalah munculnya pesan warning dari JDK, namun tidak mempengaruhi hasil eksekusi program.
 ---
 
 ## Kesimpulan
-- ArrayList efektif digunakan untuk implementasi keranjang belanja sederhana.
-- Map dapat digunakan sebagai alternatif jika ingin menyimpan quantity tiap produk.
-- Menggunakan Collections membuat kode lebih fleksibel, dinamis, dan mudah dikembangkan.an mudah dikembangkan.*)
+Penerapan exception handling dan custom exception membuat program lebih robust dan mampu menangani kesalahan secara terstruktur. Dengan adanya mekanisme ini, aplikasi tidak langsung berhenti saat terjadi kesalahan dan dapat memberikan pesan yang informatif kepada pengguna.
 
 ---
 
 ## Quiz
-(1. Jelaskan perbedaan mendasar antara List, Map, dan Set.  
-   **Jawaban:**  
-   - List menyimpan elemen secara terurut dan bisa memiliki duplikasi. Cocok untuk menyimpan data berurutan seperti daftar belanja.
-   - Set menyimpan elemen unik tanpa duplikasi dan tidak menjamin urutan. Digunakan ketika duplikasi harus dihindari, misalnya daftar kode produk.- - Map menyimpan data dalam pasangan key–value. Key harus unik, sedangkan value bisa sama. Berguna untuk menyimpan data yang bisa dicari cepat berdasarkan key, misalnya produk dan jumlahnya di keranjang.
+1. Jelaskan perbedaan error dan exception.  
+   **Jawaban:**  Error adalah kesalahan fatal yang tidak dapat ditangani oleh program, sedangkan exception adalah kesalahan yang masih dapat ditangani.
 
-2. Mengapa ArrayList cocok digunakan untuk keranjang belanja sederhana?
-   **Jawaban:**  
-   - ArrayList mudah digunakan untuk menambahkan dan menghapus produk secara dinamis.
-   - Mendukung iterasi (looping) untuk menampilkan semua item dengan cepat.
-   - Struktur ini fleksibel, sehingga jumlah item bisa bertambah atau berkurang tanpa perlu menentukan ukuran awal seperti array biasa.
+2. Apa fungsi finally dalam blok try–catch–finally?  
+   **Jawaban:**  Finally digunakan untuk mengeksekusi kode yang harus selalu dijalankan baik terjadi exception maupun tidak.
 
-3. Bagaimana struktur Set mencegah duplikasi data?
-   **Jawaban:**  
-   - Set menggunakan mekanisme hashing dan metode equals() untuk mengecek apakah elemen sudah ada.
-   - Jika elemen sudah ada, Set tidak menambahnya lagi. Dengan demikian, tidak ada elemen duplikat dalam Set.
+3. Mengapa custom exception diperlukan?  
+   **Jawaban:**  Custom exception diperlukan agar penanganan kesalahan lebih spesifik dan sesuai dengan kebutuhan aplikasi.
 
-4. Kapan sebaiknya menggunakan Map dibandingkan List? Jelaskan dengan contoh.
-   **Jawaban:**  
-   - Map digunakan ketika data memiliki pasangan unik key–value dan kita ingin akses cepat berdasarkan key.
-   - Contoh: Keranjang belanja yang menyimpan jumlah tiap produk.  
-   ```java
-   Map<Product, Integer> cart = new HashMap<>();
-   cart.put(beras, 2);  // key = produk, value = jumlah
-   cart.put(pupuk, 1);
-   ```  
-   Dengan Map, kita bisa langsung menambah, mengurangi, dan menghitung total tiap produk tanpa harus menelusuri seluruh list.
-
-   )
+4. Berikan contoh kasus bisnis dalam POS yang membutuhkan custom exception.  
+   **Jawaban:**  Contohnya adalah ketika jumlah pembelian melebihi stok yang tersedia sehingga diperlukan exception stok tidak mencukupi.
