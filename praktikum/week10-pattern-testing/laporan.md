@@ -9,7 +9,7 @@ Topik: Design Pattern (Singleton, MVC) dan Unit Testing menggunakan JUnit
 ---
 
 ## Tujuan
-Setelah mengikuti praktikum ini, mahasiswa mampu:  
+Mahasiswa mampu:  
 1. Menjelaskan konsep dasar design pattern dalam rekayasa perangkat lunak.
 2. Mengimplementasikan Singleton Pattern dengan benar.
 3. Menjelaskan dan menerapkan Model–View–Controller (MVC) pada aplikasi sederhana.
@@ -158,8 +158,9 @@ public class ProductTest {
 
 ## Hasil Eksekusi
 **Screenshot**
-![alt text](image.png)
-![alt text](image-1.png)
+<img width="854" height="865" alt="image" src="https://github.com/user-attachments/assets/e017afc2-2b41-45e3-ac86-a370396ab62d" />
+<img width="997" height="762" alt="image" src="https://github.com/user-attachments/assets/cf96dbe7-e367-479e-af93-58a54f426339" />
+
 ---
 
 ## Analisis
