@@ -1,4 +1,4 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
+# Laporan Praktikum Minggu 11
 Topik: Data Access Object (DAO) dan CRUD Database dengan JDBC
 
 ## Identitas
@@ -269,6 +269,7 @@ public class MainDaoTest {
 
 ## Hasil Eksekusi
 **Screenshot**
+<img width="833" height="216" alt="image" src="https://github.com/user-attachments/assets/7c9e2e36-0fa9-41b3-8275-b691d4dbfe5c" />
 
 ---
 
